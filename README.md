@@ -28,7 +28,7 @@ Then, to load the conda environment, run this command line:
 
 ## Data
 
-Simulated and real data can be downloaded here: [link]
+Simulated and real data can be downloaded here:  https://github.com/imodpasteur/VoroQuant/releases/download/0.0.1/data.zip
 
 
 
