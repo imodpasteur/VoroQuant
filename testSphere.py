@@ -4,12 +4,12 @@ from Voro import *
 v=Voro()
 
 print('simulation of a sphere with 1000 localization of radius R=10')
-print('theoretical surface = ',(4.*3.1415*10.*10.),'nm^2')
-print('theoretical volume = ',((4./3.)*3.1415*10.*10.*10.),'nm^3')
+print('theoretical surface = ',(4.*3.1415*500.*500.),'nm^2')
+print('theoretical volume = ',((4./3.)*3.1415*500.*500.*500.),'nm^3')
 
-v.simulate3Dsphere(1000)
+v.simulate3Dsphere(2500)
 
-v.addUniformNoiseN(300)#add noise with twice less data
+v.addUniformNoiseN(300,gap=500)#add noise with twice less data
 
 
 v.makeVoroDiagram()
@@ -19,9 +19,8 @@ v.makeVoroDiagram()
 rank=1
 v.computeVoroStatistic(rank)
 
-factor=1#threshold at twice the average density
 
-v.threshold(rank,label='density',factor=factor)
+v.threshold(rank,label='density',factor=1)
 
 
 
@@ -36,7 +35,7 @@ v.plotcluster(2)
 
 
 
-res=v.getFullStat(alpha=100,rank=rank,show=False)
+res=v.getFullStat(alpha=100,rank=rank,show=True)
 
 surface=res[0]
 volume=res[1]

@@ -33,6 +33,11 @@ Simulated and real data can be downloaded here: [link]
 
 
 
+## Example
+
+Run the following two command to simulate single molecules in a sphere, segment it using voronoi-based approach, and compute the volume at different scales to estimate its smoothness. For a sphere, depending on the localization number, the smoothness should be close to 100%
+* `source activate voroquant`
+* `python testSphere.py`
 
 
 

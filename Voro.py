@@ -69,8 +69,8 @@ class Voro():
             self.data=np.array(data)
         
     def simulate3Dsphere(self,number):
-        gap=20.;
-        radius=10.;
+        gap=250.;
+        radius=500.;
         self.data=[]
         for i in range(0,number):
             rad=radius*(pow(random.random(), 1.0/3.0))
