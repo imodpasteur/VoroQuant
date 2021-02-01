@@ -36,9 +36,9 @@ Simulated and real data can be downloaded here:  https://github.com/imodpasteur/
 ## Example
 
 Run the following two command lines to:
-* i) simulate single molecules in a sphere 
-* ii) to segment it using voronoi-based approach and 
-* iii) to compute the volume at different scales to estimate its smoothness. 
+1. simulate single molecules in a sphere 
+2. to segment it using voronoi-based approach and 
+3. to compute the volume at different scales to estimate its smoothness. 
 For a sphere, depending on the localization number, the smoothness should be close to 100%
 * `source activate voroquant`
 * `python testSphere.py`
