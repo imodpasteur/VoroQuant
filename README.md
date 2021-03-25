@@ -2,6 +2,10 @@
 
 VoroQuant is a python program allowing to analyse simulated and real SMLM data in 3D using a voronoi-based approach. Requirements and examples to run the program are given below.
 
+## License
+
+The program is distributed under the license MIT on an "as is" basis, without warranties or conditions of any kind.
+
 ## Requirements
 
 
